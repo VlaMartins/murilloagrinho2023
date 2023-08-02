@@ -1,0 +1,242 @@
+/*estilização do cabeçalho*/
+.cabeçalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url(img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.cabeçalho{
+    background-color: #F60505;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.container__botao { /*esconde o checkbox*/
+    display: none;
+}
+
+
+.container__titulo { /*esconde a escrita do favoritos e usuario*/
+    display: none;
+}
+
+/*menu hamburguer*/
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {/*esconde e mostra o menu*/
+    background-image: url("img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: #000000; /*cor do menu Ex: vermelho*/
+}
+
+.lista-menu {
+    display: none; /*permite fechar o menu*/
+    position: absolute;
+    top: 100%; /*o texto fica abaixo do desenho do menu*/
+    width: 25vw; /*largura do menu na tela*/
+}
+
+.container__botao:checked~.lista-menu {
+    display: block; /*deixa os itens do menu aparecendo*/
+    
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 0.5em;/*medida proporcional ao tamanho do dispositivo*/
+    background-color: white ; /*cor de fundo da lista do menu*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.lista-menu__titulo {
+    color: rgb(128, 3, 3) ; /*cor da escrita do menu*/
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+}
+
+.lista-menu__link {
+    color: #0f013f ;
+    line-height: 1.5em;
+    text-decoration: none; 
+    padding: 0.5em;
+}
+
+.lista-menu__link:hover {
+    background-color: #D6D6D6;
+    color:#6D6D6D;
+    border-bottom: 2px solid #EA0000;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/*SEÇÃO doacao */
+.doacao-imagem{
+	width: 20%;
+    padding-left: 70px;
+}
+
+.doacao{
+	background: #fff;
+	color: #000000;
+    font-size: 14px;
+	display : flex;
+	justify-content: justify;
+	align-items: center; 	
+	margin: 0px;
+}
+
+.doacao-div-conteudo{
+	width: 55%;
+    padding-bottom: 3em;
+    padding-top: 3em;
+    padding-left: 4em;
+    padding-right: 5em;
+}
+
+.doacao-titulo {  
+	padding: 24px 0;
+    font-size: 35px;
+}
+
+.doacao-texto-um{
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 4em;
+    padding-bottom: 0.5em;
+}
+
+.lista{
+    line-height: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    list-style-type: circle;
+    padding-left: 5em ;
+    text-decoration: none;
+}
+
+/*secao secundario*/
+.secundario__imagem{
+    width: 20%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+    padding: 20px;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 35px;
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.descricao__texto{
+    color: black;
+    line-height: 1.5em;
+    font-size: 14px;
+    text-align: justify;
+    padding-top:1em;
+    padding-bottom: 1.5em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgb(232, 230, 230);
+}
+
+
+.container__descricao {
+    padding: 2em;
+    margin-left: 5em;
+}
+
+
+.container__botao {
+    background-color: #dcdbdb;
+    border-radius: 5px;
+    padding: 1em;
+    color: black;
+    text-decoration: none; /*pra tirar o sublinhado do texto*/
+    margin-bottom: 1em;
+    width: 40%;
+    text-align: center;
+}
+
+.container__botao:hover {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.lista__link2 {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*footer*/
+.rodape {
+    text-align: center;
+    margin: 5em 0em;
+    background-color:#F60505 ;
+    font-size: 14px;
+    margin-bottom: 0%;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1em;
+    padding-left: 2em;
+}
+
+.rodape__texto {
+    margin-bottom: 1em;
+    color: white;
+    font-size: 12px;
+
+    line-height: 1em;
+}
+
+.lista__link a:hover {
+    color: greenyellow;
+    font-size: 16px;
+
+}
+
+.lista__link a:active {
+    color:purple;
+}
